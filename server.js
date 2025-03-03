@@ -35,6 +35,11 @@ app.post("/restor",async(req,res)=>{
 })
 
 
+app.get("/restor", async(req,res)=>{
+    res.status(200).json({message:"sdkjs"})
+})
+
+
 const mongodburl=mongoose.connect(process.env.mongodb)
 
 
